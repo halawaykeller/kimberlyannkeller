@@ -22,7 +22,7 @@ $PREFIX = str_repeat("../", $DEPTH_DIFFERENCE);
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 		<!--Google Fonts-->
-		<link href='https://fonts.googleapis.com/css?family=Lato|Reenie+Beanie' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono|Reenie+Beanie' rel='stylesheet' type='text/css'>
 
 		<!--Font Awesome-->
 		<link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
@@ -36,6 +36,8 @@ $PREFIX = str_repeat("../", $DEPTH_DIFFERENCE);
 		<link rel="stylesheet" href="<?php echo $PREFIX; ?>css/animate.css" />
 
 		<!--CUSTOM CSS-->
+
+		<link rel="stylesheet" href="<?php echo $PREFIX; ?>css/custom.css" />
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -64,5 +66,3 @@ $PREFIX = str_repeat("../", $DEPTH_DIFFERENCE);
 
 	</head>
 
-
-</html>

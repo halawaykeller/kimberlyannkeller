@@ -1,0 +1,90 @@
+/********************************************
+* Media Queries
+********************************************/
+
+
+/********************************************
+* Home Page Styles
+********************************************/
+
+#headline {
+	font-size: 60px;
+	font-family: "Ubuntu Mono", sans-serif;
+	color: rgb(250, 250, 250);
+}
+
+#head-column {
+	margin-top: 30%;
+
+	background-color: rgba(0,0,0,.4);
+}
+
+.mnt-bg {
+	background: url(../img/mtn.jpg) no-repeat center center fixed;
+	background-size: cover;
+
+}
+
+.bk-white {
+	background-color: whitesmoke;
+}
+
+.bk-black {
+	background-color: rgba(0,0,0,.4);
+}
+
+#home-icon {
+	color: rgb(250,250,250);
+	font-size: 3em;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.icon-lg {
+	font-size: 10em;
+}
+
+.icon-md {
+	font-size: 8em;
+
+}
+.icon-sm {
+	font-size: 3em;
+
+}
+
+.logo-txt {
+	color: white;
+}
+
+.sell-box {
+	padding: 5%;
+}
+
+
+
+
+/********************************************
+* Footer Styles
+********************************************/
+
+/***
+* Flexbox Sticky Footer
+* http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+***/
+
+/*corrects IE min-height bug*/
+html { display: flex;}
+body { width: 100%;}
+
+.sfooter {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.sfooter-content {
+	flex: 1 0 auto;
+	background-size: cover;
+	padding-bottom: 100px;
+}
