@@ -22,15 +22,20 @@ $PREFIX = str_repeat("../", $DEPTH_DIFFERENCE);
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 		<!--Google Fonts-->
-		<link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono|Reenie+Beanie' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono|Raleway' rel='stylesheet' type='text/css'>
 
 		<!--Font Awesome-->
 		<link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 
+		<!--------------ALL CSS FILES-------------------->
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+		<!--lightbox plugin CSS-->
+		<link rel="stylesheet" href="<?php echo $PREFIX; ?>css/swipebox.min.css"">
 
 		<!--Animate CSS--->
 		<link rel="stylesheet" href="<?php echo $PREFIX; ?>css/animate.css" />
@@ -39,13 +44,21 @@ $PREFIX = str_repeat("../", $DEPTH_DIFFERENCE);
 
 		<link rel="stylesheet" href="<?php echo $PREFIX; ?>css/custom.css" />
 
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!--------------ALL JS FILES-------------------->
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		<!--jQuery lightbox plugin-->
+
+		<script src="<?php echo $PREFIX; ?>js/jquery.swipebox.min.js"></script>
+
 		<!--CUSTOM Javascript-->
+
+		<script src="<?php echo $PREFIX; ?>js/nav.js"></script>
 
 		<!--Page Title-->
 		<title><?php echo $PAGE_TITLE; ?></title>
@@ -59,6 +72,15 @@ $PREFIX = str_repeat("../", $DEPTH_DIFFERENCE);
 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 			ga('create', 'UA-64861502-1', 'auto');
 			ga('send', 'pageview');
+		</script>
+
+		<!--fire the jQuery swipebox plugin-->
+		<script type="text/javascript">
+			;( function( $ ) {
+
+				$( '.swipebox' ).swipebox();
+
+			} )( jQuery );
 		</script>
 
 		<!--Easter Egg-->
