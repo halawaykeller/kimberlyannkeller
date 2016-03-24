@@ -22,6 +22,12 @@
 	transform: translateZ(-1px) scale(2);
 }
 
+.parallax__group {
+	position: relative;
+	height: 100vh;
+	transform-style: preserve-3d;
+}
+
 
 
 /********************************************

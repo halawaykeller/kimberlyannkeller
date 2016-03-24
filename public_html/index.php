@@ -10,10 +10,11 @@ require_once("navbar.php");
 ?>
 
 <body>
-	<div>
+	<div class="parallax">
 
 		<!--contains header and large mountain image-->
-		<div class="bk-home bk-center container-fluid">
+		<div class="parallax__group">
+		<div class="bk-home bk-center container-fluid parallax__layer parallax__layer--back">
 
 			<div class="row" id="headline">
 				<div class="col-sm-12 text-center" id="head-column">
@@ -26,9 +27,10 @@ require_once("navbar.php");
 				</div>
 			</div>
 		</div>
+		</div>
 	<!--contains 3 key selling point containers-->
-		<div class="container-fluid">
-			<div class="bk-white row text-center">
+		<div class="container-fluid parallax__group">
+			<div class="bk-white row text-center parallax__layer parallax__layer--base">
 				<!--point 1-->
 				<div class="col-sm-4 txt-box">
 					<img class="icon-size" src="img/devices.svg" alt="multiple devices">
